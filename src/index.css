@@ -1,13 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --accent-color: #218DFF;
+  --accent-highlight-color: #F2F8FF;
+  --soft-accent-color: #43C7FF;
+  --base-black-color: #151617;
+  --base-white-color: #FFFFFF;
+  --input-bg-grey: #EDEFF3;
+  --input-text-grey: #888E98;
+  --secondary-text-color: #8F8F8F;
+  --border-color-list: #E2E5E9;
+  --success: #38EF76;
+  --danger: #F55C6F;
+  --secondary: #C0C7D6;
+  --warning: #F2C938;
+  --table-border-color: #F2F4F6;
+  --external-accordeon-bgc: #F2F4F6;
+  --internal-accordeon-bgc: #FFF;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Manrope', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-family: 'Manrope', sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.section-header {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.default-input {
+  background-color: var(--input-bg-grey) !important;
+  color: var(--input-text-grey) !important;
+  padding: 21px 16px !important;
+  font-size: 1rem !important;
+  font-family: 'Manrope', sans-serif;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.default-button {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 700 !important;
+  padding: 8px 24px !important;
+  font-size: 1rem !important;
+  border-radius: 0 !important;
+}
+
+.secondary-text {
+  color: var(--secondary-text-color);
+}
+
+@media (min-width: 1400px) {
+  .section-right-margin {
+    margin-right: 10rem !important;
+  }
+}
+
+.default-box-shadow {
+  box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  padding: 0 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+.blue-link {
+  color: var(--accent-color) !important;
+}
+.black-link {
+  color: var(--base-black-color) !important;
+}
+.class-navbar>.nav-link {
+  color: var(--base-black-color) !important;
+}
+
+.link-hover {
+  transition: .1s filter ease-in-out;
+}
+.link-hover:hover {
+  filter: brightness(90%);
+}
+
+
+.page-item>.page-link {
+  border: none;
+  border-radius: 50%;
+  color: var(--base-black-color);
+}
+.page-item:first-child>.page-link, .page-item:last-child>.page-link {
+  color: var(--accent-color);
+}
+.active>.page-link {
+  background-color: var(--accent-color) !important;
+}
+.page-link {
+  padding: .125rem 0.47rem !important;
+  margin: 0 5px;
+}
+
+
+.text-success-custom {
+  color: var(--success);
+}
+.text-danger-custom {
+  color: var(--danger);
+}
+.text-secondary-custom {
+  color: var(--secondary);
+}
+.text-warning-custom {
+  color: var(--warning);
+}
+
+
+.danger-link {
+  color: var(--danger) !important;
+}
+.danger-link:hover {
+  background-color: #FFF0F2 !important;
+}
+
+
+.error-404-image {
+  width: 60%;
+  height: auto;
+}
+@media (max-width: 900px) {
+  .error-404-image {
+    width: 100%;
+  }
 }

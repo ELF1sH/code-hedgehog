@@ -1,0 +1,120 @@
+.tasks-table-line {
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.tasks-table-line {
+    border-bottom: 1px solid var(--border-color-list);
+    position: relative;
+}
+
+.tasks-table-item:nth-child(1) {
+    width: 7%;
+}
+.tasks-table-item:nth-child(2) {
+    width: 22%;
+}
+.tasks-table-item:nth-child(3) {
+    width: 26%;
+}
+.tasks-table-item:nth-child(4) {
+    width: 8%;
+}
+.tasks-table-item:nth-child(5) {
+    width: 17%;
+}
+.tasks-table-item:nth-child(6) {
+    width: 4%;
+}
+.tasks-table-item:nth-child(7) {
+    width: 16%;
+    margin: -20px 0;
+}
+@media (max-width: 1180px) {
+    .tasks-table-item:nth-child(1) {
+        width: 8%;
+        margin-bottom: 20px;
+    }
+    .tasks-table-item:nth-child(2) {
+        width: 46%;
+    }
+    .tasks-table-item:nth-child(3) {
+        width: 46%;
+    }
+    .tasks-table-item:nth-child(4) {
+        width: 28%;
+    }
+    .tasks-table-item:nth-child(4)::before {
+        content: "Баллы:\00a0";
+        font-weight: bold;
+    }
+    .tasks-table-item:nth-child(5) {
+        width: 30%;
+    }
+    .tasks-table-item:nth-child(5)::before {
+        content: "Срок:\00a0";
+        font-weight: bold;
+    }
+    .tasks-table-item:nth-child(6) {
+        width: 10%;
+    }
+    .tasks-table-item:nth-child(7) {
+        width: 32%;
+        margin: -20px 0;
+    }
+    .table-item-header:nth-child(4), .table-item-header:nth-child(5) {
+        display: none;
+    }
+    .table-item-header:nth-child(1), .table-item-header:nth-child(2), .table-item-header:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+
+.task-badge::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.badge-green::before {
+    background-color: var(--success);
+}
+.badge-red::before {
+    background-color: var(--danger);
+}
+
+.sub-header-info>.points-badge {
+    background-color: var(--accent-color) !important;
+}
+.sub-header-info>.solved-number {
+    color: var(--accent-color);
+}
+
+.paragraph-header {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.paragraph {
+    font-size: 0.875rem;
+    line-height: 20px;
+}
+.task-table, .task-table th, .task-table td {
+    border-color: var(--table-border-color) !important;
+    
+}
+.task-table tr {
+    border-width: 2px 0 !important;
+}
+.task-table th, .task-table td {
+    border-width: 0 2px !important;
+    padding: 0.7rem 1rem !important;
+}
+.task-table thead {
+    background-color: var(--table-border-color);
+}
+
+.solution-block {
+    font-size: 0.875rem !important;
+}

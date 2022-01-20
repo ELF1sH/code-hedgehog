@@ -1,0 +1,102 @@
+@media (max-width: 776px) {
+    .section-header {
+        text-align: center;
+    }
+    .links-wrapper {
+        justify-content: center !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-wrapper {
+        width: 24% !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .card-wrapper {
+        width: 32% !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .card-wrapper {
+        width: 48% !important;
+    }
+}
+
+
+.links-wrapper {
+    justify-content: end;
+}
+.link-with-icon {
+    border-radius: 10px;
+    transition: background-color .15s ease-in-out;
+    color: var(--accent-color);
+}
+.link-with-icon:hover {
+    background-color: var(--accent-highlight-color);
+    color: var(--accent-color);
+}
+
+
+.card-wrapper {
+    margin-bottom: 20px;
+}
+.card { 
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+    min-height: 120px;
+    background-image: url("../../images/Headers/Header1.svg");
+    background-position: right;
+    background-size: cover;
+    position: relative;
+}
+.card-header>.gradient-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+.card-text-description {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+}
+.card-text-description>.card-class-name {
+    font-size: 1rem;
+    font-weight: 700;
+}
+a.white-link {
+    color: white !important;
+    transition: .1s filter ease-in-out;
+}
+a.white-link:hover {
+    filter: brightness(85%);
+}
+.card-text-description>.card-class-department {
+    font-size: 0.8rem;
+}
+.card-header>.menu-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: .3s filter ease;
+}
+.card-header>.menu-icon:hover {
+    filter: brightness(80%);
+}
+.card-body-link {
+    padding: 8px;
+    border-radius: 8px;
+}
+.card-body-link:hover {
+    background-color: var(--accent-highlight-color);
+}
+.card-body-link>.icon {
+    width: 21px;
+}

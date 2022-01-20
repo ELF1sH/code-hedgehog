@@ -1,0 +1,100 @@
+.class-header-wrapper {
+    min-height: 240px;
+    background-image: url("../../images/Headers/Header2.svg");
+    background-position: left;
+    background-size: cover;
+    position: relative;
+}
+.class-header-description {
+    width: 400px !important;
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    bottom: 32px;
+    color: white;
+}
+.class-header-description>.name {
+    font-weight: 700;
+    font-size: 2rem;
+}
+.class-header-description>.department {
+    font-size: 1rem;
+}
+
+.class-header-wrapper>.link-back-wrapper {
+    width: auto;
+    position: absolute;
+    top: 16px;
+    left: 32px;
+}
+.link-back-wrapper>.link-back {
+    font-size: 1rem;
+}
+
+@media (max-width: 867px) {
+    .class-header-description {
+        width: 80% !important;
+    }
+    .class-header-description>.name {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 1450px) {
+    .class-navbar>.navbar-item {
+        width: calc(100% / 4) !important;
+    }
+}
+@media (max-width: 850px) {
+    .class-navbar>.navbar-item {
+        width: calc(100% / 2) !important;
+    }
+}
+
+
+.class-navbar {
+    border-bottom: 2px solid #F2F4F6;
+}
+.navbar-item {
+    width: calc(100% / 8) !important;
+    padding: 17px 0 !important;
+    transition: .1s background-color ease-in-out;
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+.navbar-item::after {
+    content: "";
+    display: block;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transition: .1s bottom ease-in;
+}
+.navbar-item:hover {
+    background-color: var(--accent-highlight-color);
+}
+.navbar-item:hover::after {
+    bottom: 0;
+}
+.class-navbar>.active::after {
+    content: "";
+    display: block;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    transition: .1s bottom ease-in;
+}
+
+
+@media (min-width: 1400px) {
+    .section-right-margin-class {
+      margin-right: 20rem !important;
+    }
+  }
