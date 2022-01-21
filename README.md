@@ -1,2 +1,2 @@
 # CodeHedgehog
-### React.JS tudy project HITs 2021-2022
+### React.JS study project HITs 2021-2022
