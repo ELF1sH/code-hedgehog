@@ -1,0 +1,95 @@
+{
+    "sidebarMenu": {
+        "item1": "Classes",
+        "item2": "Queue",
+        "item3": "Postmoderation",
+        "item4": "Languages",
+        "item5": "Groups",
+        "item6": "Themes",
+        "item7": "Contests",
+        "item8": "Tasks",
+        "item9": "Users",
+        "item10": "Localization"
+    },
+    "username": "Ivan Ivanov",
+    "profileLinks": {
+        "item1": "Settings",
+        "item2": "Log out"
+    }, 
+    "classes": {
+        "header": {
+            "name": "Classes",
+            "links": {
+                "link1": "Create",
+                "link2": "Join",
+                "link3": "Archive"
+            }
+        },
+        "form": {
+            "input1": "Name",
+            "input2": "Department", 
+            "btn": "Search"
+        },
+        "classCard": {
+            "header": "Task testing",
+            "department": "Higher IT school",
+            "links": {
+                "link1": "Postmoderation",
+                "link2": "Queue",
+                "link3": "Tasks",
+                "link4": "Users"
+            }
+        }
+    },
+    "class": {
+        "header": {
+            "name": "Mobile applications development",
+            "department": "Higher IT school",
+            "linkBack": "To the list of classes"
+        },
+        "navbar": {
+            "link1": "📃 Newsfeed",
+            "link2": "📝 Tasks",
+            "link3": "📚 Task themes",
+            "link4": "⏳ Queue",
+            "link5": "👀 Postmoderation",
+            "link6": "🏅 Results",
+            "link7": "🧑 Users",
+            "link8": "🏆 Rating"
+        }
+    },
+    "newsfeed": {
+        "header": "Newsfeed", 
+        "newsCard": {
+            "header": "Welcome to the class!",
+            "p1": "Desciption of the structure of your class:",
+            "p2": "Tasks is a list of available tasks of the class",
+            "p3": "Task themes - division the tasks by theme. There you can also see the minimum scores for the modules and their due dates (if any)",
+            "p4": "Queue is your private queue in the class",
+            "tags": "June 21 2021, 14:35 • Administrator",
+            "btn": "More →",
+            "btnBack": "← Back"
+        }
+    },
+    "tasksList": {
+        "header": {
+            "field1": "№",
+            "field2": "Name",
+            "field3": "Contest",
+            "field4": "Points",
+            "field5": "Due date"
+        },
+        "task": {
+            "name": "Sum of two numbers",
+            "contest": "Programming basics",
+            "date": "June 21, 2021",
+            "tooltip": {
+                "header": "Postmoderation: ",
+                "statusGreen": "accepted",
+                "statusRed": "not accepted",
+                "statusGray": "not checked"
+            },
+            "btnName": "Send"
+        }
+    }
+}
